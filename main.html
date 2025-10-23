@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anniversary 2 Tahun 💕</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+  <!-- LOGIN SCREEN -->
+  <div id="loginScreen" class="screen">
+    <div class="login-card">
+      <div class="fotologin">
+        <img src="foto/foto1.jpg" alt="Foto Login">
+      </div>
+      <h2>Masukin Password 💌</h2>
+      <input type="password" id="passwordInput" placeholder="Password...">
+      <button onclick="checkPassword()">Masuk</button>
+      <p id="errorMsg">Salah password 😝</p>
+    </div>
+  </div>
+
+  <!-- WELCOME SCREEN -->
+  <div id="welcomeScreen" class="screen">
+    <h2>Hai Manis 💞</h2>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div id="mainContent" class="screen">
+    <header>
+      <button onclick="showContent('loveLetter')">Love Letter</button>
+      <button onclick="showContent('gallery')">Gallery</button>
+      <button onclick="showContent('lagu')">Song</button>
+      <button onclick="showContent('aboutWe')">Gift</button>
+    </header>
+
+    <h2 id="mainTitle">Teken semua tombol ya sayang 💗</h2>
+
+    <div id="loveLetter" class="content">
+      <div class="letter-paper">
+        <h2>Hai Sayang 💌</h2>
+        <p>Terima kasih udah selalu ada buat aku. Dua tahun ini luar biasa banget berkat kamu 😘</p>
+      </div>
+    </div>
+
+    <div id="gallery" class="content">
+      <div class="letter-paper">
+        <h2>Kenangan Kita 📸</h2>
+        <img src="foto/foto1.jpg" width="220">
+        <p> 11 November 2024</p>
+        <img src="foto/foto2.jpg" width="220">
+      </div>
+    </div>
+
+    <div id="lagu" class="content">
+      <div class="letter-paper">
+        <h2>Lagu Buat Kamu 🎶</h2>
+        <div class="song-card" onclick="playSong('music/penjaga.mp3')">
+          <span>🎵</span>
+          <strong>Penjaga Hati</strong><br>
+          <small>Nadhif Basalamah</small>
+        </div>
+        <div class="player">
+          <audio id="audioPlayer" controls></audio>
+        </div>
+      </div>
+    </div>
+
+    <div id="aboutWe" class="content">
+      <div class="letter-paper">
+        <h2>Gift For 💑</h2>
+        <p>Ini Gift Ldr dulu nanti gift realnya waktuu kita meet ya sayang</p>
+        <a href="/flower.html">Gift</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
